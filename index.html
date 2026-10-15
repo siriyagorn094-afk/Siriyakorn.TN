@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - สิริยากร นะสา (Siriyakorn Nasa)</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Mali', 'cursive', 'sans-serif'],
+                        heading: ['Itim', 'cursive', 'sans-serif']
+                    },
+                    colors: {
+                        pastel: {
+                            pink: '#FDE2E4',
+                            lightpink: '#FFEBEE',
+                            green: '#E2F0CB',
+                            mint: '#D4A373',
+                            softgreen: '#80B918',
+                            yellow: '#FFF1C5',
+                            purple: '#E8AEB7',
+                            cream: '#FAEDCD',
+                            text: '#4A4E69'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Mali', cursive, sans-serif;
+            color: #4A4E69;
+            background-color: #FEFAE0;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Itim', cursive, sans-serif;
+        }
+        .cute-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border: 3px solid #FFF;
+            box-shadow: 0 10px 25px -5px rgba(186, 215, 233, 0.4);
+            border-radius: 2rem;
+        }
+        .cute-badge {
+            background-color: #E2F0CB;
+            color: #386641;
+            border-radius: 9999px;
+            padding: 0.25rem 1rem;
+            font-weight: 600;
+        }
+        .blob {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        @keyframes morph {
+            0%, 100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+            50% { border-radius: 65% 35% 38% 62% / 55% 48% 52% 45%; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-pink-200">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-pink-100">
+        <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-heading text-emerald-600 flex items-center gap-2">
+                <span>🌱</span> Siriyakorn.N
+            </a>
+            <div class="hidden md:flex gap-6 text-base font-medium">
+                <a href="#about" class="hover:text-emerald-600 transition-colors">ประวัติส่วนตัว</a>
+                <a href="#education" class="hover:text-emerald-600 transition-colors">ประวัติการศึกษา</a>
+                <a href="#skills" class="hover:text-emerald-600 transition-colors">ความสามารถพิเศษ</a>
+                <a href="#activities" class="hover:text-emerald-600 transition-colors">ผลงาน/กิจกรรม</a>
+            </div>
+            <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-all text-sm font-semibold">
+                ติดต่อฉัน
+            </a>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 space-y-16">
+
+        <section class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-10">
+            <div class="flex-1 space-y-4 text-center md:text-left">
+                <span class="inline-block bg-amber-100 text-amber-800 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
+                    ✨ แฟ้มสะสมผลงาน (Portfolio 2569)
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+                    สวัสดีค่ะ 👋<br>
+                    <span class="text-emerald-600">นางสาว สิริยากร นะสา</span>
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed max-w-lg">
+                    นักเรียนสายวิทยาศาสตร์-คณิตศาสตร์ โรงเรียนหนองเรือวิทยา 
+                    มุ่งมั่นเข้าศึกษาต่อระดับอุดมศึกษาที่ วิทยาลัยการสาธารณสุขสิรินธร สถาบันพระบรมราชชนก 💖
+                </p>
+                <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="#about" class="bg-pink-300 hover:bg-pink-400 text-gray-800 px-6 py-3 rounded-2xl font-semibold shadow-sm transition">
+                        ทำความรู้จักเพิ่มเติม ✨
+                    </a>
+                    <a href="#contact" class="bg-white hover:bg-gray-50 border-2 border-emerald-300 text-emerald-700 px-6 py-3 rounded-2xl font-semibold transition">
+                        ช่องทางติดต่อ 📱
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative w-64 h-64 md:w-80 md:h-80 flex justify-center items-center">
+                <div class="absolute inset-0 bg-emerald-200 blob opacity-70"></div>
+                <div class="absolute inset-2 bg-pink-200 blob opacity-70 animation-delay-2000"></div>
+                <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white flex items-center justify-center">
+                    <!-- Profile Picture from GitHub Raw -->
+                    <img src="https://raw.githubusercontent.com/siriyagorn094-afk/Siriyagorn/main/IMG_4022.JPG" 
+                         alt="นางสาว สิริยากร นะสา" 
+                         class="w-full h-full object-cover object-top"
+                         onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4\'><div class=\'w-24 h-24 mx-auto mb-2 rounded-full bg-emerald-100 flex items-center justify-center text-4xl\'>👩‍⚕️</div><p class=\'text-xs text-gray-500 font-sans\'>สิริยากร นะสา</p></div>';">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="scroll-mt-24">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 inline-block relative">
+                    🌷 ข้อมูลส่วนตัว
+                    <span class="block h-2 bg-pink-200 rounded-full mt-1"></span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Personal Data -->
+                <div class="cute-card p-6 space-y-4">
+                    <h3 class="text-xl font-bold text-emerald-700 border-b pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-user text-pink-400"></i> ข้อมูลทั่วไป
+                    </h3>
+                    <ul class="space-y-3 text-base">
+                        <li class="flex justify-between border-b border-dashed border-gray-200 pb-1">
+                            <span class="text-gray-500">ชื่อ-นามสกุล:</span>
+                            <span class="font-medium text-gray-800">นางสาว สิริยากร นะสา</span>
+                        </li>
+                        <li class="flex justify-between border-b border-dashed border-gray-200 pb-1">
+                            <span class="text-gray-500">วัน เกิด:</span>
+                            <span class="font-medium text-gray-800">18 สิงหาคม 2550</span>
+                        </li>
+                        <li class="flex justify-between border-b border-dashed border-gray-200 pb-1">
+                            <span class="text-gray-500">เพศ / สัญชาติ / ศาสนา:</span>
+                            <span class="font-medium text-gray-800">หญิง / ไทย / พุทธ</span>
+                        </li>
+                        <li class="flex justify-between border-b border-dashed border-gray-200 pb-1">
+                            <span class="text-gray-500">แผนการเรียน:</span>
+                            <span class="font-medium text-emerald-700">วิทยาศาสตร์-คณิตศาสตร์</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Family Data -->
+                <div class="cute-card p-6 space-y-4">
+                    <h3 class="text-xl font-bold text-emerald-700 border-b pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-house-chimney text-amber-400"></i> ข้อมูลครอบครัว
+                    </h3>
+                    <ul class="space-y-3 text-base">
+                        <li class="bg-emerald-50/50 p-3 rounded-xl">
+                            <p class="text-xs text-emerald-600 font-semibold">บิดา</p>
+                            <p class="font-medium text-gray-800">นายสามารถ นะสา</p>
+                            <p class="text-sm text-gray-500">อาชีพ: รับจ้าง</p>
+                        </li>
+                        <li class="bg-pink-50/50 p-3 rounded-xl">
+                            <p class="text-xs text-pink-600 font-semibold">มารดา</p>
+                            <p class="font-medium text-gray-800">นางอมลวรรณ นะสา</p>
+                            <p class="text-sm text-gray-500">อาชีพ: แม่บ้าน</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="scroll-mt-24">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800 inline-block relative">
+                    🎓 ประวัติการศึกษา
+                    <span class="block h-2 bg-emerald-200 rounded-full mt-1"></span>
+                </h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Primary School -->
+                <div class="cute-card p-5 text-center flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-amber-100 flex items-center justify-center text-2xl">
+                            🏫
+                        </div>
+                        <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">ประถมศึกษา</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-2">โรงเรียนโพธิ์ตากวิทยา</h3>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100">
+                        <p class="text-xs text-gray-500">ผลการเรียนเฉลี่ย</p>
+                        <p class="text-xl font-bold text-emerald-600">GPAX: 4.00</p>
+                    </div>
+                </div>
+
+                <!-- Junior High School -->
+                <div class="cute-card p-5 text-center flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl">
+                            📚
+                        </div>
+                        <span class="text-xs font-bold text-blue-700 bg-blue-100 px-3 py-1 rounded-full">มัธยมศึกษาตอนต้น</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-2">โรงเรียนหนองเรือวิทยา</h3>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100">
+                        <p class="text-xs text-gray-500">ผลการเรียนเฉลี่ย</p>
+                        <p class="text-xl font-bold text-emerald-600">GPAX: 3.95</p>
+                    </div>
+                </div>
+
+                <!-- Senior High School -->
+                <div class="cute-card p-5 text-center flex flex-col justify-between hover:-translate-y-1 transition duration-300 border-2 border-emerald-400">
+                    <div>
+                        <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-emerald-100 flex items-center justify-center text-2xl">
+                            🔬
+                        </div>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">มัธยมศึกษาตอนปลาย</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-2">โรงเรียนหนองเรือวิทยา</h3>
+                        <p class="text-xs text-gray-500 mt-1">วิทย์-คณิต</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100">
+                        <p class="text-xs text-gray-500">ผลการเรียนเฉลี่ย</p>
+                        <p class="text-xl font-bold text-emerald-600">GPAX: 3.95</p>
+                    </div>
+                </div>
+
+                <!-- Higher Education Target -->
+                <div class="cute-card p-5 text-center flex flex-col justify-between hover:-translate-y-1 transition duration-300 bg-gradient-to-b from-pink-50 to-white">
+                    <div>
+                        <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-pink-100 flex items-center justify-center text-2xl">
+                            🏥
+                        </div>
+                        <span class="text-xs font-bold text-pink-700 bg-pink-100 px-3 py-1 rounded-full">ระดับอุดมศึกษา</span>
+                        <h3 class="text-base font-bold text-gray-800 mt-2">วิทยาลัยการสาธารณสุขสิรินธร</h3>
+                        <p class="text-xs text-gray-500 mt-1">สาขาสาธารณสุข สถาบันพระบรมราชชนก</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-md">กำลังศึกษาอยู่ / เป้าหมาย 🎯</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="scroll-mt-24">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 inline-block relative">
+                    ⭐ ความสามารถพิเศษ
+                    <span class="block h-2 bg-yellow-200 rounded-full mt-1"></span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="cute-card p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-3xl">
+                        🗣️
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">ด้านภาษาและการสื่อสาร</h3>
+                    <p class="text-sm text-gray-600">สื่อสารจับใจความ ถ่ายทอดความคิดและอารมณ์ได้อย่างชัดเจนและเป็นกันเอง</p>
+                </div>
+
+                <div class="cute-card p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-3xl">
+                        🤝
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">ด้านการเข้าสังคม</h3>
+                    <p class="text-sm text-gray-600">ปรับตัวเข้ากับผู้อื่นได้ดี มีมนุษยสัมพันธ์และพร้อมเรียนรู้สิ่งใหม่ร่วมกับผู้อื่น</p>
+                </div>
+
+                <div class="cute-card p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl">
+                        👑
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">ด้านภาวะผู้นำ</h3>
+                    <p class="text-sm text-gray-600">มีความรับผิดชอบ สามารถวางแผนและนำทีมทำกิจกรรมต่างๆ ได้สำเร็จเรียบร้อย</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="scroll-mt-24">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 inline-block relative">
+                    🏆 ประสบการณ์และกิจกรรม
+                    <span class="block h-2 bg-purple-200 rounded-full mt-1"></span>
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="cute-card p-6 flex flex-col md:flex-row items-start md:items-center gap-4 hover:border-emerald-300 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl flex-shrink-0">
+                        🎖️
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-gray-800">คณะกรรมการสภานักเรียน</h3>
+                        <p class="text-sm text-emerald-700">โรงเรียนหนองเรือวิทยา</p>
+                        <p class="text-xs text-gray-500 mt-1">ปฏิบัติหน้าที่ร่วมวางแผน วัยทำงานและจัดกิจกรรมส่งเสริมวินัยและคุณธรรมในโรงเรียน</p>
+                    </div>
+                </div>
+
+                <div class="cute-card p-6 flex flex-col md:flex-row items-start md:items-center gap-4 hover:border-pink-300 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-2xl flex-shrink-0">
+                        🌟
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-gray-800">คณะบริหารสภาเด็กและเยาวชน</h3>
+                        <p class="text-sm text-pink-700">อำเภอหนองเรือ</p>
+                        <p class="text-xs text-gray-500 mt-1">มีส่วนร่วมในการขับเคลื่อนกิจกรรมพัฒนาศักยภาพเด็กและเยาวชนในระดับอำเภอ</p>
+                    </div>
+                </div>
+
+                <div class="cute-card p-6 flex flex-col md:flex-row items-start md:items-center gap-4 hover:border-amber-300 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl flex-shrink-0">
+                        🏡
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-gray-800">คณะบริหารสภาเด็กและเยาวชน</h3>
+                        <p class="text-sm text-amber-700">เทศบาลตำบลบ้านผือ</p>
+                        <p class="text-xs text-gray-500 mt-1">ร่วมมือกับชุมชนในการจัดโครงการเพื่อสังคมและการจิตอาสาพัฒนาท้องถิ่น</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-mt-24 pb-8">
+            <div class="cute-card p-8 bg-gradient-to-r from-emerald-50 via-white to-pink-50 border-2 border-emerald-200 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">📬 ช่องทางติดต่อ</h2>
+                <p class="text-sm text-gray-600 mb-6">สามารถติดต่อสอบถาม หรือพูดคุยเพิ่มเติมได้ตามข้อมูลด้านล่างนี้ค่ะ</p>
+
+                <div class="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                    <a href="tel:0945838433" class="p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition flex items-center justify-center gap-3 border border-gray-100">
+                        <i class="fa-solid fa-phone text-emerald-500 text-xl"></i>
+                        <div class="text-left">
+                            <p class="text-xs text-gray-400">เบอร์โทรศัพท์</p>
+                            <p class="text-sm font-bold text-gray-800">094-583-8433</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:hello@reallygreatsite.com" class="p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition flex items-center justify-center gap-3 border border-gray-100">
+                        <i class="fa-solid fa-envelope text-pink-500 text-xl"></i>
+                        <div class="text-left">
+                            <p class="text-xs text-gray-400">อีเมล</p>
+                            <p class="text-sm font-bold text-gray-800">hello@reallygreatsite.com</p>
+                        </div>
+                    </a>
+
+                    <div class="p-4 bg-white rounded-2xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 col-span-1 md:col-span-1">
+                        <i class="fa-solid fa-location-dot text-amber-500 text-xl"></i>
+                        <div class="text-left">
+                            <p class="text-xs text-gray-400">ที่อยู่</p>
+                            <p class="text-xs font-bold text-gray-800">82/2 ม.10 ต.บ้านผือ อ.หนองเรือ จ.ขอนแก่น</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white/80 border-t border-pink-100 py-6 text-center text-sm text-gray-500">
+        <p>© 2026 Portfolio - นางสาว สิริยากร นะสา. All Rights Reserved.</p>
+        <p class="text-xs mt-1 text-emerald-600 font-medium">ขอบคุณค่ะ 🙏✨</p>
+    </footer>
+
+</body>
+</html>
